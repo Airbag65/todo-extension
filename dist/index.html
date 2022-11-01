@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <title>Todo</title>
+</head>
+<body>
+    <div class="container">
+        <div class="new-task-form-container">
+            <form class="new-task-form">
+                <input type="text" placeholder="New task" name="newTask" required>
+                <input type="submit" value="Add">
+            </form>
+        </div>
+        <button class="logout">
+            Log out
+        </button>
+        <br>
+        <p>To do:</p>
+        <ul class="tasks"></ul>
+        <p>Done: </p>
+        <ul class="done-tasks"></ul>
+        <button class="del-finished">Delete Finised tasks</button>
+    </div>
+    <script src="./bundle.js"></script>
+</body>
+</html>

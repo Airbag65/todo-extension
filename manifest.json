@@ -1,0 +1,13 @@
+{
+    "name": "Todo App",
+    "description": "Todo app saving data in Firebase Firestore database for accessibility",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "dist/login.html",
+        "default_title": "Todo"
+    },
+    "permissions": [
+        "identity"
+    ]
+}

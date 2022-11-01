@@ -1,0 +1,6 @@
+.checked-box {
+    text-decoration: line-through;
+    color:rgb(100, 100, 100);
+    pointer-events: none;
+    cursor: default;
+}
