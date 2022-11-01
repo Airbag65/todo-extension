@@ -45,6 +45,20 @@ form {
     color: rgb(39, 39, 39);
 }
 
+.signup-text {
+    font-size: 24px;
+    color: rgb(39, 39, 39);
+}
+
+.signup-info {
+    font-size: 12px;
+    color: rgb(74, 74, 74);
+}
+
+.signup-error {
+    color: red;
+}
+
 .login-input {
     height: 1.5rem;
     width: 85%;
@@ -106,5 +120,111 @@ form {
     }
     to {
         color: rgba(0, 0, 0, 0.4);
+    }
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.new-task-form-container {
+    width: 100%;
+}
+
+.new-task-form {
+    width: 100%;
+}
+
+.del-finished {
+    color: rgb(172, 0, 0);
+    border: 2px solid rgb(172, 0, 0);
+    font-size: 14px;
+    border-radius: 1rem;
+    height: 2rem;
+    width: 10rem;
+    background-color: white;
+    box-shadow: .2rem .2rem 1rem rgba(0, 0, 0, 0.396);
+    cursor: pointer;
+}
+
+.del-finished:hover {
+    animation: hover-delete ease-in-out .5s;
+    color: white;
+    background-color: rgb(172, 0, 0);
+}
+
+
+
+@keyframes hover-delete {
+    from {
+        color: rgb(172, 0, 0);
+        background-color: white;
+    }
+    to {
+        color: white;
+        background-color: rgb(172, 0, 0);
+    }
+}
+
+.checkbox {
+    cursor: pointer;
+}
+
+.add-item-btn {
+    height: 2rem;
+    width: 50%;
+    font-size: 16px;
+    border: none;
+    border-radius: 1rem;
+    margin: .5rem 0;
+    background-color: rgb(0, 122, 230);
+    color: white;
+    cursor: pointer;
+    box-shadow: .2rem .2rem 1rem rgba(0, 0, 0, 0.303);
+}
+
+.add-item-btn:hover {
+    animation: hover-login ease 1s;
+    background-color: rgb(1, 111, 206);
+}
+
+.logout {
+    height: 2rem;
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 14px;
+    background-color: rgb(200, 200, 200);
+    box-shadow: .2rem .2rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.logout:hover {
+    animation: hover-logout ease .5s;
+    background-color: rgb(127, 127, 127);
+    color: white;
+}
+
+@keyframes hover-logout {
+    from {
+        background-color: rgb(200, 200, 200);
+        color: black;
+    }
+    to {
+        background-color: rgb(127, 127, 127);
+        color: white;
     }
 }

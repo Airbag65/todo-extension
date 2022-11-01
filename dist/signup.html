@@ -11,12 +11,15 @@
 <body>
     <div class="container">
         <form class="signup-form">
-            <label>Sign up</label>
+            <p class="signup-text">Sign up</p>
+            <p class="signup-info">Password must be at least 6 characters long</p>
             <label for="email">Email:</label>
-            <input type="email" name="email" placeholder="email">
+            <input type="email" name="email" placeholder="Email" class="login-input">
             <label for="password">Password:</label>
-            <input type="password" name="password" placeholder="password">
-            <input type="submit" value="Sign up">
+            <input type="password" name="password" placeholder="Password" class="login-input">
+            <label for="rep-password">Repeat Password:</label>
+            <input type="password" name="repPassword" placeholder="Password" class="login-input">
+            <input type="submit" value="Sign up" class="login-submit">
         </form>
         <p class="signup-error"></p>
     </div>

@@ -13,19 +13,17 @@
         <div class="new-task-form-container">
             <form class="new-task-form">
                 <p>Add a new task</p>
-                <input type="text" placeholder="New task" name="newTask" required>
-                <input type="submit" value="Add">
+                <input type="text" placeholder="New task" name="newTask" class="login-input" required>
+                <input type="submit" value="Add" class="add-item-btn">
             </form>
         </div>
-        <button class="logout">
-            Log out
-        </button>
         <br>
-        <p>To do:</p>
+        <p class="title">To do:</p>
         <ul class="tasks"></ul>
-        <p>Done: </p>
+        <p class="title">Done:</p>
         <ul class="done-tasks"></ul>
-        <button class="del-finished">Delete Finised tasks</button>
+        <button class="del-finished">Delete Finised Tasks</button>
+        <button class="logout">Log out</button>
     </div>
     <script src="./bundle.js"></script>
 </body>

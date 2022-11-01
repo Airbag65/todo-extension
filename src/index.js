@@ -85,8 +85,13 @@ try{
 
 try{
     const signUpForm = document.querySelector(".signup-form") ?? null;
+    const signUpErrorMessage = document.querySelector(".signup-error");
     signUpForm.addEventListener("submit", (e) => {
         e.preventDefault()
+        if(signUpForm.password.value != signUpForm.repPassword.value) {
+            signUpErrorMessage.innerHTML = "Passwords don't match!"
+            return;
+        }
         createUserWithEmailAndPassword(auth, signUpForm.email.value, signUpForm.password.value)
             .then((cred) => {
                 console.log(`Created user: ${cred.user.email}`);
@@ -95,7 +100,6 @@ try{
                 window.location.href = "./login.html";
             }).catch((error) => {
                 console.log(error.message);
-                const signUpErrorMessage = document.querySelector(".signup-error");
                 signUpErrorMessage.innerHTML = "Something went wrong!";
             });
     });
